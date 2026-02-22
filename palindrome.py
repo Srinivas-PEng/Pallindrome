@@ -9,3 +9,5 @@ def is_palindrome(value: str) -> bool:
 
     if value == "":
         return False
+    if len(value) == 1:
+        return True
