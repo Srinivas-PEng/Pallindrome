@@ -21,3 +21,7 @@ def test_double_character_palindrome():
 
 def test_non_palindrome_returns_false():
     assert is_palindrome("abc") is False
+
+
+def test_simple_palindrome():
+    assert is_palindrome("laval") is True
