@@ -25,3 +25,6 @@ def test_non_palindrome_returns_false():
 
 def test_simple_palindrome():
     assert is_palindrome("laval") is True
+
+def test_non_palindrome_word():
+    assert is_palindrome("toronto") is False
