@@ -28,3 +28,6 @@ def test_simple_palindrome():
 
 def test_non_palindrome_word():
     assert is_palindrome("toronto") is False
+
+def test_sentence_palindrome_ignoring_case_and_spaces():
+    assert is_palindrome("Able was I ere I saw Elba") is True

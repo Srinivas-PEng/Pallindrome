@@ -12,7 +12,11 @@ def is_palindrome(value: str) -> bool:
     if value == "":
         return False
 
-    chars = deque(value)
+    normalized = "".join(
+        char.lower() for char in value if char !=""
+    )
+
+    chars = deque(normalized)
     while len(chars) >1:
         if chars.popleft() !=chars.pop():
             return False
